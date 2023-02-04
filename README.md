@@ -45,7 +45,7 @@ Automatyzacje procesu kompilacji zapewnia wykorzystanie Gradle'a.
 
 <a name="model-obiektowy"></a>
 ## Model obiektowy
-![Model_obiektowy](../images/uml.png)
+![Model_obiektowy](images/uml.png)
 
 Warstwa persystencji realizowana jest poprzez JPA (wzorzec Repository).
 
@@ -67,7 +67,7 @@ Ze względu na potrzebę zapewnienia wszystkich potrzebnych informacji, które z
 oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w bazie znalazły się następujące tabele:
 
 
-![Schemat_bazy_danych](../images/schemat_bazy_danych.png)
+![Schemat_bazy_danych](images/schemat_bazy_danych.png)
 
 - **Roles** - Pełni funkcję słownika. Zawiera role użytkowników występujące w systemie. \
   Dane znajdujące się w tabeli wczytywane są z pliku *roles.txt* przy starcie aplikacji. \
@@ -112,7 +112,7 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
 ## Widoki
 - **Logowanie**
 
-  ![Logowanie](../images/logowanie.png)
+  ![Logowanie](images/logowanie.png)
 
   Widok umożliwia logowanie się do systemu. \
   Należy podać poprawny adres email w pierwszym polu formularza oraz hasło w drugim. \
@@ -126,7 +126,7 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
 
 - **Rejestracja**
 
-  ![Rejestracja](../images/rejestracja.png)
+  ![Rejestracja](images/rejestracja.png)
 
   Widok umożliwia założenie konta w systemie. \
   Po podaniu niepoprawnych lub niekompletnych danych pojawa się wyskakującę okno blokujące działanie aplikacji w tle,
@@ -138,7 +138,7 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
 
 - **Widok główny aplikacji**
 
-  ![Widok początkowy](../images/widok_glowny_aplikacji.png)
+  ![Widok początkowy](images/widok_glowny_aplikacji.png)
 
   W górnym lewym rogu za pomocą przycisku *Sign out* możemy się wylogować. \
   Obok przycisku służącego do wylogowywania widoczny jest aktualnie zalogowany użytkownik. \
@@ -147,7 +147,7 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
 
 - **Filmy**
 
-  ![Widok początkowy](../images/filmy.png)
+  ![Widok początkowy](images/filmy.png)
 
   Widok dostępny jest dla użytkowników z rolą admina/menadżera. \
   W tabeli wyświetlane są filmy obecnie znajdującę się w bazie. \
@@ -155,18 +155,18 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
   Po dwukrotnym wciśnięciu danego rekordu wyświetla się widok szczegółowych danych o filmie. \
   Po kliknięciu w przycisk *NEW* otwiera się formularz dodawania nowego filmu. 
 
-  ![Widok początkowy](../images/filmy_szczegoly.png)
+  ![Widok początkowy](images/filmy_szczegoly.png)
   
   Za pomocą przycisku *Delete* możemy usunąć film.
 
-  ![Widok początkowy](../images/filmy_formularz.png)
+  ![Widok początkowy](images/filmy_formularz.png)
 
   Po poprawnym uzupełnieniu danych i wciśnięciu przycisku *Submit* film zostaje dodany do bazy danych. 
 
 
 - **Seanse**
 
-  ![Widok początkowy](../images/performances_view.jpg)
+  ![Widok początkowy](images/performances_view.jpg)
 
   Widok dostępny jest dla użytkowników z rolą admina/menadżera. \
   W tabeli wyświetlane są seanse obecnie zarejestrowane w bazie. \
@@ -178,17 +178,17 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
   Po dwukrotnym kliknięciu *Wiersza* otwiera się formularz edytowania seansu. \
 
 
-  ![Widok początkowy](../images/performance_form_view.jpg)
+  ![Widok początkowy](images/performance_form_view.jpg)
 
   Po poprawnym uzupełnieniu danych i wciśnięciu przycisku *Add* seans zostaje zatwierdzony.
 
-  ![Widok początkowy](../images/performance_edit_view.jpg)
+  ![Widok początkowy](images/performance_edit_view.jpg)
 
   Po poprawnym uzupełnieniu danych i wciśnięciu przycisku *Apply* seans zostaje zatwierdzony.
 
 - **Rekomendacje**
 
-  ![Widok początkowy](../images/recommendations_view.jpg)
+  ![Widok początkowy](images/recommendations_view.jpg)
 
   Widok dostępny jest dla użytkowników z rolą admina/menadżera. \
   W tabeli wyświetlane są rekomendacje obecnie zarejestrowane w bazie. \
@@ -199,18 +199,18 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
   Po wciśnięciu przycisku *Add* otwiera się formularz dodawania nowej rekomendacji.\
   Po dwukrotnym kliknięciu *Wiersza* otwiera się formularz edytowania rekomendacji.
 
-  ![Widok początkowy](../images/recommendation_form_view.jpg)
+  ![Widok początkowy](images/recommendation_form_view.jpg)
 
   Po poprawnym uzupełnieniu danych i wciśnięciu przycisku *Add* rekomendacja zostaje zatwierdzona.
 
-  ![Widok początkowy](../images/recommendation_edit_view.jpg)
+  ![Widok początkowy](images/recommendation_edit_view.jpg)
 
   Po poprawnym uzupełnieniu danych i wciśnięciu przycisku *Apply* rekomandacja zostaje zatwierdzona.
 
   Dla widoków dodawania i edycji rekomendacji oraz seansów:
   Po kliknięciu przycisku *Search* obok pola tekstowego z tytułem filmu można przejść do widoku wyszukiwania filmu.
 
-  ![Widok początkowy](../images/movie_search_view.jpg)
+  ![Widok początkowy](images/movie_search_view.jpg)
 
   Filmy można wyświetlić w tabeli po uprzednim ich wyszukaniu \
   za pomocą odpowiednich pól u góry widoku i kliknięciu przycisku *Search*.\
@@ -221,31 +221,31 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
 
 - **Bilety**
 
-  ![Widok początkowy](../images/tickets_view.jpg)
+  ![Widok początkowy](images/tickets_view.jpg)
   
   Widok dostępny jest dla wszystkich użytkowników, niezależnie od roli. \
   Widok na początku wyświetla listę seansów, z których użytkownik wybiera jeden. \
   Za pomocą *Select genre* można wyświetlić tylko filmy z danej kategorii. \
   Wówczas wyświetli się tabela z nazwami poszczególych foteli w sali, w której odbędzie się seans.
 
-  ![Wybór miejsca 2](../images/tickets_view_full.png)
+  ![Wybór miejsca 2](images/tickets_view_full.png)
 
   Użytkownik wybiera odpowiedni fotel klikając w jego nazwę.
 
-  ![Wybór miejsca 3](../images/tickets_view_selected.jpg)
+  ![Wybór miejsca 3](images/tickets_view_selected.jpg)
 
   Z pomocą przycisku "Sell ticket" użytkownik może sprzedać bilet na wybrany fotel w danym seansie.
 
-  ![Sprzedaż biletu_4](../images/tickets_view_marked.jpg)
+  ![Sprzedaż biletu_4](images/tickets_view_marked.jpg)
 
   Nazwa fotela jest obramowana na czerwono, co oznacza, że ten fotel jest zarezerwowany i nie da się sprzedać biletu na ten fotel i seans. \
   W przypadku zwrotu biletu, użytkownik może wybrać zarezerwowany fotel w celu realizacji zwrotu.
 
-  ![Zwrot biletu 1](../images/tickets_view_marked_many.jpg)
+  ![Zwrot biletu 1](images/tickets_view_marked_many.jpg)
 
   Za pomocą przycisku "Cancel reservation" rezerwacja na fotel jest anulowana.
 
-  ![Zwrot biletu 2](../images/tickets_view_cancel_seat.jpg)
+  ![Zwrot biletu 2](images/tickets_view_cancel_seat.jpg)
 
 - **Statystyki**
 
@@ -253,15 +253,15 @@ oraz są niezbędne do poprawnego działania systemu, zgodnie z wymaganiami, w b
   
   Widok statystyk ogólnych pokazuje rozkład filmów oraz zaplanowanych seansów na poszczególne gatunki
 
-  ![Statystyki ogólne](../images/statystyki_1.png)
+  ![Statystyki ogólne](images/statystyki_1.png)
 
   Widok szczegółowych raportów pozwala użytkownikowi na wprowadzenie zakresu dni, z jakich należy wygenerować raport. Po naciśnięciu przycisku "Generate Reports" pojawią się wykresy przedstawiające liczbę sprzedanych biletów oraz sumę zysków za te bilety.
 
-  ![Raporty szczegółowe](../images/statystyki_2.png)
+  ![Raporty szczegółowe](images/statystyki_2.png)
 
 - **Panel administratora**
 
-  ![Panel_administratowa](../images/panel_administratora.png)
+  ![Panel_administratowa](images/panel_administratora.png)
 
   Widok dostępny jest jedynie dla użytkownika z rolą administratora. \
   Administrator systemu może zmieniać rolę użytkowników wybierając ich z listy, a następnie po wyborze roli zatwierdzić ją przyciskiem *Set*. \
